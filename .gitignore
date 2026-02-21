@@ -1,0 +1,11 @@
+node_modules/
+.env
+logs/
+*.log
+build/
+.dart_tool/
+.packages
+.metadata
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
