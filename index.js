@@ -8,6 +8,10 @@ const jwt = require("jsonwebtoken");
 const SECRET = "super_secret_walkie_key"; // change later
 
 const app = express();
+app.use(cors({
+  origin: "https://walkie-server-2.onrender.com",
+  methods: ["GET", "POST"],
+}));
 app.use(cors());
 app.use(express.json());
 
@@ -96,6 +100,10 @@ wss.on("connection", (ws, req) => {
       console.log("Client disconnected");
     }
   });
+});
+
+app.get("/", (req, res) => {
+  res.status(200).send("Walkie Signaling Server Running 🚀");
 });
 
 server.listen(PORT, () => {
