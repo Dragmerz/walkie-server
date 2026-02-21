@@ -8,7 +8,7 @@ app.use(cors());
 const SECRET = "super_secret_walkie_key"; // change later
 
 const app = express();
-app.use(cors());
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
