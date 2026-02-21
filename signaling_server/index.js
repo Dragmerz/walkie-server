@@ -6,9 +6,9 @@ const jwt = require("jsonwebtoken");
 app.use(cors());
 
 const SECRET = "super_secret_walkie_key"; // change later
-app.use(cors());
-const app = express();
 
+const app = express();
+app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
