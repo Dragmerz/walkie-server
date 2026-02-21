@@ -3,7 +3,6 @@ const http = require("http");
 const WebSocket = require("ws");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
-const cors = require("cors");
 app.use(cors());
 
 const SECRET = "super_secret_walkie_key"; // change later
